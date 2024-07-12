@@ -24,6 +24,7 @@ function getHumanChoice() {
     }
 }
 
+
 function playRound() {
     const humanChoice = getHumanChoice();
     const computerChoice = getComputerChoice();
@@ -41,6 +42,7 @@ function playRound() {
         return { winner: "computer", message: resultMessage };
     }
 }
+
 
 function playGame() {
     let playerScore = 0;
