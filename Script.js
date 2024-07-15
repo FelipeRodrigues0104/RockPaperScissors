@@ -1,3 +1,4 @@
+/*
 function randomGenerator() {
     return Math.floor(Math.random() * 3) + 1;
 }
@@ -42,13 +43,14 @@ function playRound() {
         return { winner: "computer", message: resultMessage };
     }
 }
-
+*/
 
     function addNewDivButtons() {
+        //console.log(1);
         const container = document.querySelector("#container");
         const buttonsDiv = document.createElement("div");
         buttonsDiv.id = "buttonsDiv";
-        buttonsDiv.style.border = "5px solid orange";
+        buttonsDiv.style.border = "5px solid black";
         buttonsDiv.style.backgroundColor = "yellow";
 
         const h1Text = document.createElement("h1");
@@ -114,4 +116,4 @@ function playGame() {
 
 */
 
-document.getElementById('rpsButton').addEventListener('click', playGame);
+document.getElementById('rpsButton').addEventListener('click', addNewDivButtons);
