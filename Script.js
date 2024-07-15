@@ -44,6 +44,52 @@ function playRound() {
 }
 
 
+    function addNewDivButtons() {
+        const container = document.querySelector("#container");
+        const buttonsDiv = document.createElement("div");
+        buttonsDiv.id = "buttonsDiv";
+        buttonsDiv.style.border = "5px solid orange";
+        buttonsDiv.style.backgroundColor = "yellow";
+
+        const h1Text = document.createElement("h1");
+        h1Text.classList.add("h1Text");
+        h1Text.textContent = "Pick your choice.";
+
+        const rockButton = document.createElement("button");
+        rockButton.id = "rock";
+        rockButton.textContent = "Rock";
+
+        const paperButton = document.createElement("button");
+        paperButton.id = "paper";
+        paperButton.textContent = "Paper";
+
+        const scissorsButton = document.createElement("button");
+        scissorsButton.id = "scissors";
+        scissorsButton.textContent = "Scissors";
+
+        const resultParagraph = document.createElement("p");
+        resultParagraph.id = "result";
+
+        const scoreParagraph = document.createElement("p");
+        scoreParagraph.id = "score";
+        scoreParagraph.textContent = "Player: 0, Computer: 0";
+
+        const finalResultParagraph = document.createElement("p");
+        finalResultParagraph.id = "finalResult";
+
+        buttonsDiv.appendChild(h1Text);
+        buttonsDiv.appendChild(rockButton);
+        buttonsDiv.appendChild(paperButton);
+        buttonsDiv.appendChild(scissorsButton);
+        buttonsDiv.appendChild(resultParagraph);
+        buttonsDiv.appendChild(scoreParagraph);
+        buttonsDiv.appendChild(finalResultParagraph);
+        container.appendChild(buttonsDiv);
+    }
+
+
+
+/*
 function playGame() {
     let playerScore = 0;
     let computerScore = 0;
@@ -65,5 +111,7 @@ function playGame() {
         document.getElementById('finalResult').textContent = "It's a tie!";
     }
 }
+
+*/
 
 document.getElementById('rpsButton').addEventListener('click', playGame);
